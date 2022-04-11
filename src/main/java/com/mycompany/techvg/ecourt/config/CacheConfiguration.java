@@ -48,6 +48,12 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.techvg.ecourt.domain.User.class.getName());
             createCache(cm, com.mycompany.techvg.ecourt.domain.Authority.class.getName());
             createCache(cm, com.mycompany.techvg.ecourt.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mycompany.techvg.ecourt.domain.CourtCase.class.getName());
+            createCache(cm, com.mycompany.techvg.ecourt.domain.CourtCase.class.getName() + ".lawyerDetails");
+            createCache(cm, com.mycompany.techvg.ecourt.domain.Hearing.class.getName());
+            createCache(cm, com.mycompany.techvg.ecourt.domain.LawyerDetails.class.getName());
+            createCache(cm, com.mycompany.techvg.ecourt.domain.LawyerDetails.class.getName() + ".courtCases");
+            createCache(cm, com.mycompany.techvg.ecourt.domain.Organization.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
